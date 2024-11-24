@@ -48,6 +48,8 @@ To run the module, it is necessary to provide as input arguments the IP address 
 
 ./ModuleTemplate 192.168.0.43 33001 34001
 
+The module runs an infinite loop contained in the Main.cpp file, which expects the reception of a request and, once received, generates a reply message. You should run another module to stablish the communications between them following a client-server model.
+
 IMPORTANT: if your software module sends data through the UDP Tx port 33001 (for example), the UDP port on the reception side will be 33001; if your module receives data through the UDP Rx port 34001, the sender should employ the same Tx port. 
 
 ADVICE: define a UDP Ports table to ensure the communications between the different software modules in your application are correctly linked.
