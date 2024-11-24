@@ -9,7 +9,9 @@ A software module is defined here as a program intended to conduct a particular 
 
 The ModuleInterface class provides two basic services: sending messages, and receiving messages. These messages may be requests for doing something, or data required by other module to conduct a task. For example, one module can be used to provide the grasping points obtained from a perception method for the control program of one robotic arm.
 
-The user nees to specify three parameters when creating the module interface: the IP address of the end point of the communication (for example, another module or an operation manager), the UDP port for transmitting the data to the specified IP address, and a UDP port for receiving the data from any source.
+The user needs to specify three parameters when creating the module interface: the IP address of the end point of the communication (for example, another module or an operation manager), the UDP port for transmitting the data to the specified IP address, and a UDP port for receiving the data from any source.
+
+This project template is intended to be customized according to user's requirements. The data apcket has been designed to be as general as possible for implementing diverse services. The developer should provide the correct interpretation and use of fields like the message code or message option.
 
 # About data packets
 
