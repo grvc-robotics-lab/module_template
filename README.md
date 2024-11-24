@@ -1,7 +1,7 @@
 # module_template
 Project template for creating C++ software modules relying on UDP socket communications
 
-# DESCRIPTION
+# Description
 
 This project is a C++ program template intended to facilitate the communication of software modules interfaced through the ModuleInterface class, relying on UDP sockets and C-style structures used as data packets for sending requests and messages from/to other software modules or a program manager.
 
@@ -9,8 +9,9 @@ A software module is defined here as a program intended to conduct a particular 
 
 The ModuleInterface class provides two basic services: sending messages, and receiving messages. These messages may be requests for doing something, or data required by other module to conduct a task. For example, one module can be used to provide the grasping points obtained from a perception method for the control program of one robotic arm.
 
+The user nees to specify three parameters when creating the module interface: the IP address of the end point of the communication (for example, another module or an operation manager), the UDP port for transmitting the data to the specified IP address, and a UDP port for receiving the data from any source.
 
-# ABOUT DATA PACKETS
+# About data packets
 
 Data packets are the information units interchanged by software modules. These are implemented as C/C++ style data structures within the ModuleInterface.h file. The data structure (packet) is DATA_PACKET_MODULE_MSG. It includes the following fields:
 	(1) Three bytes (characters) header for recognizing the type of data packet.
