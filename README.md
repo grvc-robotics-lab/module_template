@@ -39,7 +39,7 @@ The ModuleTemplate project is intended to be easily integrated in any Linux syst
 
 # Installation
 
-Download or clone the project in your desired folder. Create a build forlder (mkdir build), go inside the folder (cd build), generate compilation files (cmake ..) and compile (make). The executable can be fund in the buil/Main folder.
+Download or clone the project in your desired folder. Create a build folder (mkdir build), go inside the folder (cd build), generate compilation files (cmake ..) and compile (make). The executable can be fund in the buil/Main folder.
 
 
 # Usage
@@ -49,6 +49,8 @@ To run the module, it is necessary to provide as input arguments the IP address 
 ./ModuleTemplate 192.168.0.43 33001 34001
 
 IMPORTANT: if your software module sends data through the UDP Tx port 33001 (for example), the UDP port on the reception side will be 33001; if your module receives data through the UDP Rx port 34001, the sender should employ the same Tx port. 
+
+ADVICE: define a UDP Ports table to ensure the communications between the different software modules in your application are correctly linked.
 
 # Customization
 
