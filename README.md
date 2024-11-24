@@ -28,14 +28,14 @@ This data packet is intended to be generic and customizable according to user ne
 It is very important to include the modifier __attribute__((packed)) in the definition of the structure to avoid zero padding, which may affect the size of the packet and prevent correct communication.
 
 
-# REQUIREMENTS
+# Requirements
 
 No particular library is required, only standard C/C++ libraries and the cmake tool for compiling.
 
 The ModuleTemplate project is intended to be easily integrated in any Linux system, removing any dependency from non standard libraries.
 
 
-# INSTALLATION
+# Installation
 
 Download or clone the project in your desired folder. Create a build forlder (mkdir build), go inside the folder (cd build), generate compilation files (cmake ..) and compile (make). The executable can be fund in the buil/Main folder.
 
